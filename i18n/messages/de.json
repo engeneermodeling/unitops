@@ -1,0 +1,93 @@
+{
+  "common": {
+    "title": "Process Calculators",
+    "hero_title": "Ingenieur-Berechnungen für Prozessanlagen",
+    "hero_subtitle": "Präzise Online-Rechner für Wärmeübertrager, Pumpen, Kolonnen und mehr. Optimiert für Tablets und Smartphones.",
+    "select_device": "Apparat auswählen",
+    "coming_soon": "Demnächst",
+    "theme_toggle": "Design wechseln",
+    "language": "Sprache",
+    "copyright": "© 2026 Process Calculators. Ingenieur-Tool.",
+    "back": "Zurück"
+  },
+  "devices": {
+    "heat_exchanger": {
+      "name": "Rohrbündelwärmeübertrager",
+      "description": "Berechnung des Wärmeaustauschs zwischen Dampf und Flüssigkeit",
+      "tag": "Wärmeübertragung"
+    },
+    "centrifugal_pump": {
+      "name": "Kreiselpumpe",
+      "description": "Auswahl und hydraulische Berechnung",
+      "tag": "Pumpen"
+    },
+    "distillation_column": {
+      "name": "Rektifikationskolonne",
+      "description": "Berechnung von Böden und Belastungen",
+      "tag": "Stoffübertragung"
+    }
+  },
+  "materials": {
+    "copper": "Kupfer",
+    "brass": "Messing",
+    "aluminum": "Aluminium",
+    "steel": "Stahl",
+    "stainless": "Edelstahl"
+  },
+  "calculators": {
+    "heat_exchanger": {
+      "title": "Vertikaler Rohrbündelwärmeübertrager",
+      "description": "Berechnung der Wärmeübertragungsfläche und Konstruktionsparameter",
+      "task_title": "Aufgabe",
+      "task": "Berechnen und konstruieren Sie einen vertikalen Rohrbündelwärmeübertrager zur Flüssigkeitserwärmung. Bestimmen Sie Wärmeübertragungsfläche, Dampfverbrauch, Anzahl der Rohrpasses, Apparatedurchmesser und andere Parameter."
+    }
+  },
+  "calculator": {
+    "input_data": "Eingabedaten",
+    "fields": {
+      "G": {
+        "label": "Flüssigkeitsdurchsatz",
+        "unit": "t/h"
+      },
+      "t1": {
+        "label": "Anfangstemperatur",
+        "unit": "°C"
+      },
+      "t2": {
+        "label": "Endtemperatur",
+        "unit": "°C"
+      },
+      "P": {
+        "label": "Sättigungsdampfdruck",
+        "unit": "MPa"
+      },
+      "B": {
+        "label": "Lösungskonzentration",
+        "unit": "Gew.%"
+      },
+      "W": {
+        "label": "Strömungsgeschwindigkeit",
+        "unit": "m/s"
+      },
+      "material": {
+        "label": "Rohrmaterial"
+      }
+    },
+    "calculate": "Berechnen",
+    "no_results": "Daten eingeben und \"Berechnen\" klicken"
+  },
+  "results": {
+    "F": {
+      "label": "Wärmeübertragungsfläche"
+    },
+    "n": {
+      "label": "Rohranzahl"
+    },
+    "d_inner": {
+      "label": "Rohrinnendurchmesser"
+    },
+    "H": {
+      "label": "Rohrhöhe"
+    }
+  }
+}

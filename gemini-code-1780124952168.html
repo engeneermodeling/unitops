@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>UnitOps Pro Vector Board</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#12141c] text-slate-100 min-h-screen p-8 flex flex-col items-center justify-center gap-6">
+
+    <div class="text-center max-w-xl space-y-2">
+        <h1 class="text-2xl font-bold tracking-tight text-white">UnitOps: Реальний Векторний Об'єм</h1>
+        <p class="text-sm text-slate-400">Цей код повністю відновлює металеві градієнти, фаски та тривимірну структуру літери <strong>U</strong> та потоків з макету.</p>
+    </div>
+
+    <!-- Container Area -->
+    <div class="grid grid-cols-1 gap-8 w-full max-w-4xl">
+        
+        <!-- DARK THEME PRO -->
+        <div class="bg-[#151922] border border-[#242b3d] rounded-2xl overflow-hidden flex flex-col">
+            <div class="p-4 bg-[#0d1017] border-b border-[#242b3d] flex items-center justify-between">
+                <span class="text-xs font-mono text-slate-400 font-bold">DARK THEME (3D Gradient Edition)</span>
+                <button onclick="copySvg('uflow-pro-dark')" class="bg-sky-600 hover:bg-sky-500 text-white text-xs px-4 py-2 rounded-lg font-bold transition">
+                    Скопіювати об'ємний SVG
+                </button>
+            </div>
+            <div class="p-16 flex items-center justify-center bg-[#0d111a] min-h-[320px]">
+                <div id="uflow-pro-dark" class="w-[450px]">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 140" width="100%" height="100%">
+  <defs>
+    <!-- Metallic Gradient for U-shape (Left Shading) -->
+    <linearGradient id="metalLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8a94a6" />
+      <stop offset="30%" stop-color="#adb9cc" />
+      <stop offset="70%" stop-color="#515b6b" />
+      <stop offset="100%" stop-color="#333b47" />
+    </linearGradient>
+    
+    <!-- Metallic Gradient for U-shape (Right/Front Face) -->
+    <linearGradient id="metalFront" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#cbd5e1" />
+      <stop offset="25%" stop-color="#f8fafc" />
+      <stop offset="50%" stop-color="#94a3b8" />
+      <stop offset="85%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+
+    <!-- Flow Cyan Gradient 1 -->
+    <linearGradient id="flowCyan1" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#0ea5e9" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <!-- Flow Cyan Gradient 2 -->
+    <linearGradient id="flowCyan2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#047857" opacity="0"/>
+      <stop offset="40%" stop-color="#0ea5e9" />
+      <stop offset="100%" stop-color="#22d3ee" />
+    </linearGradient>
+  </defs>
+
+  <g id="UnitOps-Pro-Dark">
+    <!-- 3D-Look Icon Assembly -->
+    <g id="Icon-3D" transform="translate(15, 10)">
+      <!-- Back Shadow/Bevel of U -->
+      <path d="M 22,20 L 38,20 V 68 C 38,80 47,89 59,89 C 71,89 80,80 80,68 V 20 L 96,20 V 68 C 96,89 79,106 59,106 C 39,106 22,89 22,68 Z" fill="url(#metalLeft)" />
+      <!-- Front Face Chamfer Face -->
+      <path d="M 25,20 L 35,20 V 68 C 35,78 44,86 56,86 C 68,86 77,78 77,68 V 20 L 93,20 V 68 C 93,87 77,103 56,103 C 35,103 25,87 25,68 Z" fill="url(#metalFront)" />
+      
+      <!-- Upper dynamic flow cutting the letter -->
+      <path d="M 10,82 Q 38,52 65,55 T 112,38" fill="none" stroke="url(#flowCyan1)" stroke-width="7" stroke-linecap="round"/>
+      <!-- Lower supporting flow cutting the letter -->
+      <path d="M 14,92 Q 40,65 65,65 T 115,48" fill="none" stroke="url(#flowCyan2)" stroke-width="4" stroke-linecap="round"/>
+      <!-- Small accent turbo swirl arc -->
+      <path d="M 100,34 Q 108,32 110,40 T 102,46" fill="none" stroke="#22d3ee" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- Typography Block -->
+    <g id="Typography" transform="translate(145, 28)">
+      <!-- Unit text with clean metal tone -->
+      <text x="0" y="50" fill="#e2e8f0" font-family="Plus Jakarta Sans, sans-serif" font-size="48" font-weight="400" letter-spacing="-1">Unit</text>
+      <!-- Ops text capitalized and colored as in your request -->
+      <text x="98" y="50" fill="#0ea5e9" font-family="Plus Jakarta Sans, sans-serif" font-size="48" font-weight="800" letter-spacing="-1">Ops</text>
+      <!-- Subtitle descriptor -->
+      <text x="2" y="78" fill="#57657a" font-family="Plus Jakarta Sans, sans-serif" font-size="11" font-weight="700" letter-spacing="0.8">CHEMICAL &amp; PROCESS ENGINEERING TOOLS</text>
+    </g>
+  </g>
+</svg>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Toast Component -->
+    <div id="toast" class="fixed bottom-6 bg-emerald-500 text-slate-950 font-bold px-6 py-3 rounded-full text-sm opacity-0 pointer-events-none transition duration-300 shadow-lg">
+        Вектор скопійовано! Натисни Ctrl+V у Figma.
+    </div>
+
+    <script>
+        function copySvg(elementId) {
+            const svgContent = document.getElementById(elementId).innerHTML.trim();
+            navigator.clipboard.writeText(svgContent).then(() => {
+                const toast = document.getElementById('toast');
+                toast.classList.remove('opacity-0');
+                toast.classList.add('opacity-100');
+                setTimeout(() => {
+                    toast.classList.remove('opacity-100');
+                    toast.classList.add('opacity-0');
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>
+```eof
+
+Тепер геометрія правильна — об'ємна, солідна та відповідає концепту **UnitOps** з великою **O**. Спробуй закинути цей варіант у Figma, він не буде пласким рудиментом.

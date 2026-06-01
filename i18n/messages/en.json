@@ -1,0 +1,93 @@
+{
+  "common": {
+    "title": "Process Calculators",
+    "hero_title": "Engineering Calculations for Process Equipment",
+    "hero_subtitle": "Precise online calculators for heat exchangers, pumps, columns and more. Optimized for tablets and smartphones.",
+    "select_device": "Select Apparatus",
+    "coming_soon": "Coming Soon",
+    "theme_toggle": "Toggle Theme",
+    "language": "Language",
+    "copyright": "© 2026 Process Calculators. Engineering Tool.",
+    "back": "Back"
+  },
+  "devices": {
+    "heat_exchanger": {
+      "name": "Shell & Tube Heat Exchanger",
+      "description": "Heat exchange calculation between steam and liquid",
+      "tag": "Heat Transfer"
+    },
+    "centrifugal_pump": {
+      "name": "Centrifugal Pump",
+      "description": "Selection and hydraulic calculation",
+      "tag": "Pumps"
+    },
+    "distillation_column": {
+      "name": "Distillation Column",
+      "description": "Tray and load calculation",
+      "tag": "Mass Transfer"
+    }
+  },
+  "materials": {
+    "copper": "Copper",
+    "brass": "Brass",
+    "aluminum": "Aluminum",
+    "steel": "Steel",
+    "stainless": "Stainless Steel"
+  },
+  "calculators": {
+    "heat_exchanger": {
+      "title": "Vertical Shell & Tube Heat Exchanger",
+      "description": "Heat transfer surface and structural parameters calculation",
+      "task_title": "Task",
+      "task": "Calculate and design a vertical shell and tube heat exchanger for liquid heating. Determine heat transfer surface, steam consumption, number of tube passes, apparatus diameter and other parameters."
+    }
+  },
+  "calculator": {
+    "input_data": "Input Data",
+    "fields": {
+      "G": {
+        "label": "Liquid Flow Rate",
+        "unit": "t/h"
+      },
+      "t1": {
+        "label": "Initial Temperature",
+        "unit": "°C"
+      },
+      "t2": {
+        "label": "Final Temperature",
+        "unit": "°C"
+      },
+      "P": {
+        "label": "Saturated Steam Pressure",
+        "unit": "MPa"
+      },
+      "B": {
+        "label": "Solution Concentration",
+        "unit": "wt.%"
+      },
+      "W": {
+        "label": "Liquid Velocity",
+        "unit": "m/s"
+      },
+      "material": {
+        "label": "Tube Material"
+      }
+    },
+    "calculate": "Calculate",
+    "no_results": "Enter data and click \"Calculate\""
+  },
+  "results": {
+    "F": {
+      "label": "Heat Transfer Surface"
+    },
+    "n": {
+      "label": "Number of Tubes"
+    },
+    "d_inner": {
+      "label": "Tube Inner Diameter"
+    },
+    "H": {
+      "label": "Tube Height"
+    }
+  }
+}
