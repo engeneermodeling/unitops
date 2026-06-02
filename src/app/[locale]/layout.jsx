@@ -1,7 +1,7 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
-import Providers from "../../components/Providers"; 
+import Providers from "../../components/Providers";
 import "../globals.css";
 
 const locales = ["uk", "en", "de", "ru"];
@@ -21,6 +21,12 @@ export default async function LocaleLayout({ children, params }) {
 
   return (
     <html lang={locale} suppressHydrationWarning>
+      <head>
+        <meta
+          name="google-site-verification"
+          content="f5nalxq8R9B9N98asYtQaqbeD03S0T-mX9BgLfKKYe4"
+        />
+      </head>
       <body className="min-h-screen bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100 antialiased">
         <NextIntlClientProvider messages={messages} locale={locale}>
           <Providers>{children}</Providers>
