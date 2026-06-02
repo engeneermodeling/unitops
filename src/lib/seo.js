@@ -2,7 +2,7 @@
 
 export const siteConfig = {
   name: "UnitOps",
-  url: "http://localhost:3000", // Зміниш на реальний домен
+  url: "https://unitops.vercel.app", // Зміниш на реальний домен
   description: "Інженерні калькулятори для розрахунку теплообмінників, насосів та колон",
   keywords: ["unitops", "теплообмінник", "розрахунок", "інженерія", "калькулятор", "хімічна технологія"],
   defaultLocale: "uk",
